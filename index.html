@@ -1,115 +1,118 @@
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sanjana M L | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#0f172a;color:#e5e7eb;line-height:1.6}
-header{padding:60px 20px;text-align:center;background:linear-gradient(135deg,#1e3a8a,#2563eb)}
-header h1{font-size:3rem}
-header p{margin-top:10px;color:#dbeafe}
-.buttons a{display:inline-block;margin:10px;padding:10px 18px;background:#fff;color:#1e3a8a;
-text-decoration:none;border-radius:8px;font-weight:bold}
-section{max-width:1000px;margin:auto;padding:40px 20px}
-h2{color:#60a5fa;margin-bottom:15px}
-.skills{display:flex;flex-wrap:wrap;gap:10px}
-.skill{background:#1e293b;padding:8px 14px;border-radius:20px}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:#1e293b;padding:20px;border-radius:14px;box-shadow:0 0 12px rgba(0,0,0,.25)}
-.card h3{color:#93c5fd}
-.tech{font-size:.9rem;color:#cbd5e1;margin:10px 0}
-.card a{display:inline-block;margin-top:10px;background:#2563eb;color:white;
-padding:8px 14px;text-decoration:none;border-radius:8px}
-footer{text-align:center;padding:30px;background:#111827;margin-top:40px}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:#0b1120;color:#e5e7eb}
+header{min-height:100vh;display:flex;align-items:center;justify-content:center;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#312e81)}
+.hero{max-width:900px;text-align:center;padding:30px}
+.hero h1{font-size:3.8rem}
+.hero h2{font-weight:400;color:#cbd5e1;margin:15px 0}
+.hero p{max-width:700px;margin:20px auto;color:#cbd5e1}
+.btns{margin-top:25px}
+.btn{display:inline-block;margin:8px;padding:12px 22px;border-radius:10px;
+background:#2563eb;color:#fff;text-decoration:none;font-weight:600;transition:.3s}
+.btn:hover{background:#1d4ed8;transform:translateY(-3px)}
+.btn.outline{background:transparent;border:2px solid #60a5fa}
+section{max-width:1100px;margin:auto;padding:70px 20px}
+h3.section{font-size:2rem;margin-bottom:30px;color:#93c5fd}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{padding:10px 16px;background:#162033;border:1px solid #2b3c59;border-radius:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{background:#111827;border:1px solid #25324a;border-radius:16px;padding:22px;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.card h4{font-size:1.25rem;color:#bfdbfe;margin-bottom:10px}
+.card p{color:#cbd5e1;font-size:.95rem}
+.tech{margin:15px 0;color:#93c5fd;font-size:.9rem}
+.card a{display:inline-block;margin-top:8px;color:#fff;text-decoration:none;
+background:#2563eb;padding:10px 16px;border-radius:8px}
+footer{padding:35px;text-align:center;background:#020617;color:#94a3b8}
+.contact a{color:#93c5fd;text-decoration:none}
 </style>
 </head>
 <body>
 
 <header>
+<div class="hero">
 <h1>Sanjana M L</h1>
-<p>Computer Science Engineering Student | AI/ML Enthusiast</p>
-<div class="buttons">
-<a href="https://github.com/sanjana-ml/Resume">Resume</a>
-<a href="https://github.com/sanjana-ml">GitHub</a>
-<a href="https://www.linkedin.com/in/sanjana-m-l-5bb200140">LinkedIn</a>
+<h2>Computer Science Engineering Student | AI/ML & Software Developer</h2>
+<p>
+I am a Computer Science Engineering student with a strong interest in Artificial Intelligence,
+Machine Learning, Computer Vision, and Full-Stack Development. I enjoy building real-world
+software solutions and continuously improving my problem-solving skills through projects.
+</p>
+
+<div class="btns">
+<a class="btn" href="https://raw.githubusercontent.com/sanjana-ml/Resume/main/Sanjana_ML_before.pdf" target="_blank">Resume</a>
+<a class="btn outline" href="https://github.com/sanjana-ml" target="_blank">GitHub</a>
+<a class="btn outline" href="https://www.linkedin.com/in/sanjana-m-l-5bb200140" target="_blank">LinkedIn</a>
+</div>
 </div>
 </header>
 
 <section>
-<h2>About Me</h2>
-<p>I am a Computer Science Engineering student passionate about Artificial Intelligence, Machine Learning, Computer Vision, and Full-Stack Development. I enjoy building practical applications that solve real-world problems and continuously improving my technical skills.</p>
-</section>
-
-<section>
-<h2>Skills</h2>
+<h3 class="section">Skills</h3>
 <div class="skills">
-<span class="skill">Python</span>
-<span class="skill">Java</span>
-<span class="skill">C</span>
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
-<span class="skill">JavaScript</span>
-<span class="skill">React</span>
-<span class="skill">Node.js</span>
-<span class="skill">SQL</span>
-<span class="skill">TensorFlow</span>
-<span class="skill">OpenCV</span>
-<span class="skill">Git</span>
+<span class="skill">Python</span><span class="skill">Java</span><span class="skill">C</span>
+<span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span>
+<span class="skill">React</span><span class="skill">Node.js</span><span class="skill">SQL</span>
+<span class="skill">TensorFlow</span><span class="skill">OpenCV</span>
+<span class="skill">Git</span><span class="skill">Machine Learning</span>
 </div>
 </section>
 
 <section>
-<h2>Projects</h2>
-<div class="projects">
+<h3 class="section">Projects</h3>
+
+<div class="grid">
 
 <div class="card">
-<h3>Driver Safety System</h3>
-<p>AI-powered driver monitoring system that detects drowsiness and distraction in real time using computer vision, CNN with CBAM attention, facial landmarks, and personalized calibration.</p>
-<div class="tech"><b>Tech:</b> Python, TensorFlow, OpenCV, MediaPipe, CNN, CBAM</div>
-<a href="https://github.com/sanjana-ml/driver-safety-system">View Project</a>
+<h4>🚗 Driver Safety System</h4>
+<p>AI-powered driver monitoring system that detects drowsiness and distraction in real time using computer vision. Uses CNN with CBAM attention, facial landmark analysis, and personalized calibration for improved detection accuracy.</p>
+<div class="tech"><b>Technologies:</b> Python • TensorFlow • OpenCV • MediaPipe • CNN • CBAM</div>
+<a href="https://github.com/sanjana-ml/driver-safety-system" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<h3>Mental Health Ollama Assistant</h3>
-<p>Privacy-focused mental health chatbot running locally using Ollama and LLMs for secure offline conversations.</p>
-<div class="tech"><b>Tech:</b> Python, Node.js, Ollama, LLaMA, HTML, CSS, JavaScript</div>
-<a href="https://github.com/sanjana-ml/mental-health-ollama-assistant">View Project</a>
+<h4>🧠 Mental Health Ollama Assistant</h4>
+<p>Privacy-focused mental health chatbot that runs locally using Ollama and LLMs to provide secure offline conversations without sending user data to external servers.</p>
+<div class="tech"><b>Technologies:</b> Python • Node.js • Ollama • LLaMA • HTML • CSS • JavaScript</div>
+<a href="https://github.com/sanjana-ml/mental-health-ollama-assistant" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<h3>AI Legal Advisor</h3>
-<p>Legal document assistant using retrieval-augmented generation and multiple AI agents through a Streamlit interface.</p>
-<div class="tech"><b>Tech:</b> Python, Streamlit, LangChain, RAG</div>
-<a href="https://github.com/sanjana-ml/legal_advisor">View Project</a>
+<h4>⚖️ AI Legal Advisor</h4>
+<p>Legal document assistant that analyzes uploaded files and answers legal queries using retrieval-augmented generation and multiple AI agents in a Streamlit application.</p>
+<div class="tech"><b>Technologies:</b> Python • Streamlit • LangChain • RAG • LLM</div>
+<a href="https://github.com/sanjana-ml/legal_advisor" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<h3>Delay in Public Transport</h3>
-<p>Machine learning system that predicts delays in public transportation using historical travel data.</p>
-<div class="tech"><b>Tech:</b> Python, Pandas, Scikit-learn, ML</div>
-<a href="https://github.com/sanjana-ml/delay-in-public-transport">View Project</a>
+<h4>🚌 Delay in Public Transport</h4>
+<p>Machine learning system that predicts delays in public transportation using historical travel data to estimate expected delays and support better travel planning.</p>
+<div class="tech"><b>Technologies:</b> Python • Pandas • Scikit-learn • Machine Learning</div>
+<a href="https://github.com/sanjana-ml/delay-in-public-transport" target="_blank">View Project</a>
 </div>
 
 </div>
 </section>
 
-<section>
-<h2>Contact</h2>
-<p>GitHub: <a style="color:#93c5fd" href="https://github.com/sanjana-ml">github.com/sanjana-ml</a></p>
-<p>LinkedIn: <a style="color:#93c5fd" href="https://www.linkedin.com/in/sanjana-m-l-5bb200140">Profile</a></p>
+<section class="contact">
+<h3 class="section">Contact</h3>
+<p>GitHub: <a href="https://github.com/sanjana-ml">github.com/sanjana-ml</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sanjana-m-l-5bb200140">linkedin.com/in/sanjana-m-l-5bb200140</a></p>
 </section>
 
 <footer>
-© 2026 Sanjana M L • Portfolio
+© 2026 Sanjana M L • Built with HTML & CSS
 </footer>
 
 </body>
