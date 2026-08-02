@@ -1,25 +1,249 @@
+
+
+
+
+image(164).png
+ save not enabled
+
+image(165).png
+
+image(166).png
+boring
+
+That's a good choice. Keeping it simple and professional is often better for internship applications.
+
+I'll make it include only:
+
+Hero section (Name + CSE Student | AI/ML Enthusiast)
+
+About Me (short paragraph)
+
+Skills
+
+Projects with:
+
+Project title
+
+2–3 line description
+
+Technologies used
+
+GitHub button
+
+Resume button
+
+GitHub button
+
+LinkedIn button
+
+Contact section
+
+Dark theme, responsive layout, and clean animations
+
+Project descriptions
+🚗 Driver Safety System
+AI-powered driver monitoring system that detects drowsiness and distraction in real time using computer vision. Implements CNN with CBAM attention, facial landmark analysis, and personalized calibration to improve detection accuracy under varying conditions.
+
+Technologies: Python, TensorFlow, OpenCV, MediaPipe, CNN, CBAM
+
+🧠 Mental Health Ollama Assistant
+Privacy-focused mental health chatbot that runs locally using Ollama and LLMs. Provides supportive conversations without sending user data to external servers, ensuring offline and secure interactions.
+
+Technologies: Python, Node.js, Ollama, LLaMA, HTML, CSS, JavaScript
+
+⚖️ AI Legal Advisor
+Intelligent legal document assistant that analyzes uploaded documents and answers legal queries using retrieval-augmented generation and multiple AI agents through an interactive Streamlit interface.
+
+Technologies: Python, Streamlit, LangChain, RAG, LLMs
+
+🚌 Delay in Public Transport
+Machine learning-based system for predicting delays in public transportation using historical travel data. Helps estimate expected delays to improve travel planning and decision-making.
+
+Technologies: Python, Machine Learning, Pandas, Scikit-learn
+
+These descriptions are concise, highlight the technical aspects, and are appropriate for recruiters.
+
+For the portfolio code itself, I'll provide the complete index.html in multiple parts because it won't fit into a single response. Once you paste the parts together and commit the file, your GitHub Pages site will update automatically within a couple of minutes.
+
+
+ok
+
+Great! We'll make it look professional.
+
+Since the complete HTML is too large for one response, we'll do it in 3 parts:
+
+Part 1: Layout, hero, about, skills, navigation, styling.
+
+Part 2: Projects section with your GitHub links.
+
+Part 3: Contact section, footer, animations, and closing tags.
+
+After Part 3, you'll have one complete index.html that you can paste into your GitHub Pages repository.
+
+Then I'll also help you:
+
+Add your resume PDF correctly so the Resume button downloads it.
+
+Add a favicon.
+
+Improve your GitHub Pages URL appearance if needed.
+
+We'll end up with a portfolio that's clean, modern, and suitable for internship applications.
+
+
+ha give file
+
+I've created the portfolio file for you.
+
+Download it here:
+index.html
+
+How to publish it
+Open your sanjana-ml.github.io repository.
+
+Click on index.html.
+
+Click ✏️ Edit.
+
+Press Ctrl+A and replace everything with the contents of the downloaded index.html file.
+
+Click Commit changes.
+
+Wait about 1–2 minutes.
+
+Open:
+
+https://sanjana-ml.github.io
+One important improvement
+Your Resume button currently links to the repository, not the PDF itself. If your resume PDF is inside the repository, send me:
+
+the filename (e.g. Sanjana_ML_Resume.pdf), or
+
+a screenshot of the repository contents.
+
+I'll give you the correct direct download link so recruiters can open your resume with one click.
+
+If you want an even more premium portfolio (similar to portfolios from developers at Google or Microsoft, with animations, icons, timeline, and polished cards), I can build that too. It will be around 700–900 lines and look significantly more professional than this basic version. 
+
+
+
+index.html
+HTML
+
+
+Library
+/
+index.html
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sanjana M L | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjana M L | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#0f172a;color:#e5e7eb;line-height:1.6}
+header{padding:60px 20px;text-align:center;background:linear-gradient(135deg,#1e3a8a,#2563eb)}
+header h1{font-size:3rem}
+header p{margin-top:10px;color:#dbeafe}
+.buttons a{display:inline-block;margin:10px;padding:10px 18px;background:#fff;color:#1e3a8a;
+text-decoration:none;border-radius:8px;font-weight:bold}
+section{max-width:1000px;margin:auto;padding:40px 20px}
+h2{color:#60a5fa;margin-bottom:15px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#1e293b;padding:8px 14px;border-radius:20px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#1e293b;padding:20px;border-radius:14px;box-shadow:0 0 12px rgba(0,0,0,.25)}
+.card h3{color:#93c5fd}
+.tech{font-size:.9rem;color:#cbd5e1;margin:10px 0}
+.card a{display:inline-block;margin-top:10px;background:#2563eb;color:white;
+padding:8px 14px;text-decoration:none;border-radius:8px}
+footer{text-align:center;padding:30px;background:#111827;margin-top:40px}
+</style>
 </head>
-<body style="font-family:Arial;max-width:800px;margin:auto;padding:40px;">
-    <h1>Sanjana M L</h1>
+<body>
 
-    <p>Computer Science Engineering Student | AI/ML Enthusiast</p>
+<header>
+<h1>Sanjana M L</h1>
+<p>Computer Science Engineering Student | AI/ML Enthusiast</p>
+<div class="buttons">
+<a href="https://github.com/sanjana-ml/Resume">Resume</a>
+<a href="https://github.com/sanjana-ml">GitHub</a>
+<a href="https://www.linkedin.com/in/sanjana-m-l-5bb200140">LinkedIn</a>
+</div>
+</header>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Driver Safety System</li>
-        <li>Mental Health Chatbot</li>
-        <li>Legal Advisor using AI</li>
-        <li> Delay In Public Transport</li>
-    </ul>
+<section>
+<h2>About Me</h2>
+<p>I am a Computer Science Engineering student passionate about Artificial Intelligence, Machine Learning, Computer Vision, and Full-Stack Development. I enjoy building practical applications that solve real-world problems and continuously improving my technical skills.</p>
+</section>
 
-    <h2>Links</h2>
-    <p>
-        <a href="https://github.com/sanjana-ml">GitHub</a><br>
-        <a href="https://www.linkedin.com/in/sanjana-m-l-5bb200140/">LinkedIn</a>
-    </p>
+<section>
+<h2>Skills</h2>
+<div class="skills">
+<span class="skill">Python</span>
+<span class="skill">Java</span>
+<span class="skill">C</span>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">React</span>
+<span class="skill">Node.js</span>
+<span class="skill">SQL</span>
+<span class="skill">TensorFlow</span>
+<span class="skill">OpenCV</span>
+<span class="skill">Git</span>
+</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+<div class="projects">
+
+<div class="card">
+<h3>Driver Safety System</h3>
+<p>AI-powered driver monitoring system that detects drowsiness and distraction in real time using computer vision, CNN with CBAM attention, facial landmarks, and personalized calibration.</p>
+<div class="tech"><b>Tech:</b> Python, TensorFlow, OpenCV, MediaPipe, CNN, CBAM</div>
+<a href="https://github.com/sanjana-ml/driver-safety-system">View Project</a>
+</div>
+
+<div class="card">
+<h3>Mental Health Ollama Assistant</h3>
+<p>Privacy-focused mental health chatbot running locally using Ollama and LLMs for secure offline conversations.</p>
+<div class="tech"><b>Tech:</b> Python, Node.js, Ollama, LLaMA, HTML, CSS, JavaScript</div>
+<a href="https://github.com/sanjana-ml/mental-health-ollama-assistant">View Project</a>
+</div>
+
+<div class="card">
+<h3>AI Legal Advisor</h3>
+<p>Legal document assistant using retrieval-augmented generation and multiple AI agents through a Streamlit interface.</p>
+<div class="tech"><b>Tech:</b> Python, Streamlit, LangChain, RAG</div>
+<a href="https://github.com/sanjana-ml/legal_advisor">View Project</a>
+</div>
+
+<div class="card">
+<h3>Delay in Public Transport</h3>
+<p>Machine learning system that predicts delays in public transportation using historical travel data.</p>
+<div class="tech"><b>Tech:</b> Python, Pandas, Scikit-learn, ML</div>
+<a href="https://github.com/sanjana-ml/delay-in-public-transport">View Project</a>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>GitHub: <a style="color:#93c5fd" href="https://github.com/sanjana-ml">github.com/sanjana-ml</a></p>
+<p>LinkedIn: <a style="color:#93c5fd" href="https://www.linkedin.com/in/sanjana-m-l-5bb200140">Profile</a></p>
+</section>
+
+<footer>
+© 2026 Sanjana M L • Portfolio
+</footer>
+
 </body>
 </html>
